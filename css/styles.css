@@ -1,0 +1,474 @@
+:root {
+  --main-bg: #ffffff;
+  --secondary-bg: #f7f7f7;
+  --dark-bg: #191c26;
+  --white-text: #ffffff;
+  --tagline: rgba(157, 164, 189, 0.6);
+  --slogan: #9da4bd;
+  --title: #303030;
+  --text: #555555;
+  --accent: #ff6c00;
+  --btn: rgba(0, 0, 0, 0);
+  --title-font: "Raleway", sans-serif;
+  --bg-btn: transparent;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--text);
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  outline: 1px solid red;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--accent);
+}
+.btn {
+  border: 1px solid var(--accent);
+  border-radius: 25px;
+  min-width: 160px;
+  padding: 12px 20px;
+
+  background-color: var(--bg-btn);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent);
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--title);
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*------------------ Header ------------------- */
+.header {
+  background-color: var(--dark-bg);
+  padding: 32px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 131px;
+}
+
+.header-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header-item {
+}
+
+.header-link {
+  color: var(--white-text);
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent);
+}
+.header-tel {
+  margin-left: auto;
+  margin-right: 43px;
+
+  color: var(--white-text);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.header-btn {
+  color: var(--white-text);
+}
+/*------------------ Hero ------------------- */
+.hero {
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-list {
+  width: 100px;
+}
+
+.hero-item {
+  color: var(--title);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+.hero-content {
+  padding: 272px 100px 208px;
+  flex-grow: 1;
+  background-color: var(--dark-bg);
+}
+
+.hero-subtitle {
+  margin-bottom: 20px;
+
+  color: var(--tagline);
+}
+
+.hero-title {
+  margin-bottom: 20px;
+
+  color: var(--white-text);
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+}
+
+.hero-descr {
+  max-width: 360px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--slogan);
+  letter-spacing: 0.02em;
+}
+
+/*------------------ About ------------------- */
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+  width: 50%;
+}
+
+.about-item {
+  width: calc((100%-30px) / 2);
+}
+
+.about-content {
+  margin-left: 30px;
+  width: 50%;
+  max-width: 470px;
+}
+
+.about-subtitle {
+  margin-bottom: 20px;
+
+  color: var(--title);
+}
+
+.about-title {
+  margin-bottom: 20px;
+}
+
+.about-descr {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  letter-spacing: 0.02em;
+}
+.about-descr-text {
+  margin-top: 0;
+  margin-bottom: 42px;
+
+  font-size: 14px;
+  line-height: 1.86;
+}
+
+/*------------------ Pricelist ------------------- */
+.pricelist {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-color: var(--dark-bg);
+}
+
+.price-container {
+}
+
+.pricelist-subtitle {
+  margin-bottom: 20px;
+
+  color: var(--tagline);
+}
+.pricelist-title {
+  margin-bottom: 44px;
+
+  color: var(--white-text);
+}
+
+.prices-content {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+
+.price-list {
+  outline: 1px solid green;
+  padding: 30px 20px;
+  flex-grow: 1;
+
+  color: var(--slogan);
+  letter-spacing: 0.02em;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.price-item-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.white-btn {
+  display: block;
+  margin: 0 auto;
+  color: var(--white-text);
+}
+
+/*------------------ Features ------------------- */
+.feature-box {
+  background-color: var(--secondary-bg);
+}
+.features span {
+  color: var(--title);
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+}
+.feature-descr {
+  color: var(--title);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+}
+
+.features-subtitle {
+  color: var(--title);
+}
+
+.features-descr {
+  letter-spacing: 0.02em;
+}
+
+/*------------------ Barbers ------------------- */
+.barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-color: var(--secondary-bg);
+}
+
+.barbers-subtitle {
+  margin-bottom: 20px;
+
+  color: var(--title);
+}
+
+.barbers-title {
+  margin-bottom: 44px;
+}
+
+.barbers-list {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  /* flex-wrap: wrap; */
+}
+
+.barbers-item {
+  width: calc((100%-60px) / 3);
+}
+
+.barbers-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.barber-name {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  color: var(--title);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  /* text-align: center; */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.barber-descr {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--accent);
+  font-size: 14px;
+  line-height: 1.36;
+  /* text-align: center; */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/*------------------ Gallery ------------------- */
+.gallery {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.gallery-subtitle {
+  margin-bottom: 44px;
+
+  color: var(--title);
+}
+
+.gallery-list {
+  display: flex;
+  gap: 30px;
+  /* flex-wrap: wrap; */
+}
+
+.gallery-item {
+  width: calc((100%-90px) / 4);
+}
+
+/*------------------ Form and Contacts ------------------- */
+.contacts-form {
+  background-color: var(--dark-bg);
+}
+
+.contacts-title {
+  color: var(--white-text);
+}
+
+.address-link {
+  color: var(--slogan);
+
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contact-link {
+  color: var(--slogan);
+
+  font-style: normal;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contacts-subtitle {
+  color: var(--white-text);
+}
+
+.work-time {
+  color: var(--slogan);
+
+  letter-spacing: 0.02em;
+}
+
+/*------------------ Footer ------------------- */
+footer {
+  background-color: var(--secondary-bg);
+  color: var(--title);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+.footer-copy {
+  color: var(--slogan);
+}
