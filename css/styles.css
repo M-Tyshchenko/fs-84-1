@@ -1,7 +1,7 @@
 :root {
   --main-bg: #ffffff;
   --secondary-bg: #f7f7f7;
-  --dark-bg: #191c26;
+  --dark-bg: rgba(25, 28, 38, 0.2);
   --white-text: #ffffff;
   --tagline: rgba(157, 164, 189, 0.6);
   --slogan: #9da4bd;
@@ -178,7 +178,11 @@ body {
 .hero-content {
   padding: 272px 100px 208px;
   flex-grow: 1;
-  background-color: var(--dark-bg);
+  /* background-color: var(--dark-bg); */
+  background-image: linear-gradient(var(--dark-bg), var(--dark-bg)),
+    url(../images/hero-bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-subtitle {
@@ -400,6 +404,36 @@ body {
   text-transform: capitalize;
 }
 
+.barbers-social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.barbers-social-item {
+  width: 44px;
+  height: 44px;
+}
+.barber-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  background-color: var(--main-bg);
+  color: var(--title);
+}
+
+.barber-social-link:is(:hover, :focus) {
+  /* background-color: #555555; */
+  color: var(--accent);
+}
+
+.barber-social-icon {
+  fill: currentColor;
+}
 /*------------------ Gallery ------------------- */
 .gallery {
   padding-top: 120px;
