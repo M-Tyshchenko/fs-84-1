@@ -316,7 +316,6 @@ body {
     #171a24 0%,
     rgba(23, 26, 36, 0.2) 100%
   );
-  /* outline: 1px solid green; */
 
   color: var(--slogan);
   letter-spacing: 0.02em;
@@ -325,6 +324,16 @@ body {
 .price-item {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.price-item::before {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+
+  background: rgba(157, 164, 189, 0.12);
 }
 
 .price-item:not(:last-child) {
