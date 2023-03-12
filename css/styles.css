@@ -43,6 +43,8 @@ body {
 }
 .link {
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover,
 .link:focus {
@@ -63,6 +65,8 @@ body {
   text-transform: uppercase;
 
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus {
@@ -118,7 +122,7 @@ body {
 }
 /*------------------ Header ------------------- */
 .header {
-  background-color: var(--dark-bg);
+  position: absolute;
   padding: 32px 0;
 }
 
@@ -177,11 +181,29 @@ body {
   display: flex;
 }
 
-.hero-list {
-  width: 100px;
+.hero-list-wrap {
+  display: flex;
+  align-items: flex-end;
 }
 
-.hero-item {
+.hero-list {
+  display: flex;
+  gap: 40px;
+  width: 100px;
+  align-items: center;
+  /* padding-top: 26px; */
+
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+}
+.hero-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--title);
+  flex-shrink: 0;
+}
+.hero-item-link {
   color: var(--title);
   font-weight: 600;
   font-size: 11px;
